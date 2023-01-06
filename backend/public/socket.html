@@ -1,0 +1,14 @@
+<script type="importmap">
+  {
+    "imports": {
+      "socket.io-client": "https://cdn.socket.io/4.4.1/socket.io.esm.min.js"
+    }
+  }
+</script>
+
+<script type="module">
+  import { io } from "socket.io-client";
+
+  const socket = io("ws://192.168.29.180:8081");
+  console.log(socket)
+</script>
